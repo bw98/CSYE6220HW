@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Authentication Method Configuration -->
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>default</realm-name>
+    </login-config>
+
+    <!--    Session Setting-->
+    <session-config>
+        <session-timeout>30</session-timeout>
+        <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
+
+    <!--    servlet class info-->
+    <servlet>
+        <servlet-name>HeaderServlet</servlet-name>
+        <servlet-class>com.example.csye6220hw.HeaderServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>FormServlet</servlet-name>
+        <servlet-class>com.example.csye6220hw.FormServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DisplayGetXServlet</servlet-name>
+        <servlet-class>com.example.csye6220hw.DisplayGetXServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CSVServlet</servlet-name>
+        <servlet-class>com.example.csye6220hw.CSVServlet</servlet-class>
+    </servlet>
+
+    <!--    servlet mapping info-->
+    <servlet-mapping>
+        <servlet-name>HeaderServlet</servlet-name>
+        <url-pattern>/HeaderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>FormServlet</servlet-name>
+        <url-pattern>/FormServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DisplayGetXServlet</servlet-name>
+        <url-pattern>/DisplayGetXServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CSVServlet</servlet-name>
+        <url-pattern>/parking_facilities.xls</url-pattern>
+    </servlet-mapping>
+
+</web-app>

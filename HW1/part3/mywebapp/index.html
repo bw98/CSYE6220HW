@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Homework Assignment1 - Part3</h1>
+<form action="http://localhost:8080/mywebapp/FormServlet" method="GET">
+<b>Email: </b> <input type="text" name="Email"><br><br>
+<b>Password: </b> <input type="text" name="Password"><br><br>
+<b>Confirm Password: </b> <input type="text" name="ConfirmPassword"><br><br>
+<b>Upload Your Picture: </b><input type="file" name="Picture"><br><br>
+<b>Gender: </b>
+<input type="radio" name="GenderType" value="Male">Male
+<input type="radio" name="GenderType" value="Female">Female
+<br><br>
+<b>Select Country: </b>
+<select>
+    <option name="Country" value ="USA">USA</option>
+    <option name="Country" value ="China">China</option>
+    <option name="Country" value="India">India</option>
+</select>
+<br><br>
+<b>Hobby: </b>
+<input type="checkbox" name="HobbyType" value="Cricket">Cricket
+<input type="checkbox" name="HobbyType" value="Football">Football
+<br><br>
+<b>Address: </b><br>
+<textarea name="address" rows=3 cols=60></textarea><br><br>
+<input type="submit"><br><br>
+<!--<input type="submit" name="Submit" value="Submit">-->
+</form>
+</body>
+</html>

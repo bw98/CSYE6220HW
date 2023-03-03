@@ -1,0 +1,23 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Store</title>
+</head>
+<body>
+
+<h1>Welcome to our Movie Store</h1>
+<h3>Please make your selection below</h3>
+
+<form action="menu" method="post">
+  <label for="page">Select a page:</label>
+  <select id="page" name="page">
+    <option value="Browse Movies">Browse Movies</option>
+    <option value="Add Movie">Add New Movie</option>
+  </select>
+  <button type="submit">Send</button>
+</form>
+
+</body>
+</html>

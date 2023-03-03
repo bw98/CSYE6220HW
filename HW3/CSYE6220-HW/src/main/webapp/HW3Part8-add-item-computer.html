@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<h1>CSYE6220 Online Shop</h1>
+<a href="http://localhost:8080/CSYE6220_HW_war/HW3Part8-add-item.html">1. Add New Items to Cart</a>
+<br>
+<a href="http://localhost:8080/CSYE6220_HW_war/ListItemServlet">2. List and Delete Items in Cart</a>
+<br>
+<Hr>
+
+<h1>Shopping for Digital Products</h1>
+<h1> Which items you want to add into your cart?</h1>
+<form action="ItemServlet" method="GET">
+  <input type="hidden" name="Action" value="AddItem" />
+
+  <fieldset>
+    <input type="radio" name="Item" value="MacBookPro"/> Apple MacBook Pro 13.3  [$1299.99]
+    <input type="hidden" name="MacBookProPrice" value="1299.99"/>
+    <br>
+    <input type="radio" name="Item" value="AsusLaptop"/> Asus Laptop NEO 2 Black [$949.95]
+    <input type="hidden" name="AsusLaptopPrice" value="949.95"/>
+    <br>
+    <input type="radio" name="Item" value="HPLaptop"/> HP Laptop with 2 DV7 [$1199.95]
+    <input type="hidden" name="HPLaptopPrice" value="1199.95"/>
+    <br>
+    <input type="radio" name="Item" value="AppleAirpod"/> Apple Airpod pro XI [$399]
+    <input type="hidden" name="AppleAirpodPrice" value="399.00"/>
+    <br>
+  </fieldset>
+
+    <input type="submit" value="Add to Cart"/>
+</form>
+
+</body>
+</html>

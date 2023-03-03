@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<h1>CSYE6220 Online Shop</h1>
+<a href="http://localhost:8080/CSYE6220_HW_war/HW2Part7-add-item.html">1. Add New Items to Cart</a>
+<br>
+<a href="http://localhost:8080/CSYE6220_HW_war/ListItemServlet">2. List All Items in Cart</a>
+<br>
+<Hr>
+
+<h1> Which items you want to add into your cart?</h1>
+<form action="ItemServlet" method="GET">
+  <input type="hidden" name="Action" value="AddItem" />
+
+  <fieldset>
+    <input type="radio" name="Item" value="Water"/> Water
+    <br>
+    <input type="radio" name="Item" value="Milk"/> Milk
+    <br>
+    <input type="radio" name="Item" value="Apple"/> Apple
+    <br>
+    <input type="radio" name="Item" value="Egg"/> Egg
+    <br>
+    <input type="radio" name="Item" value="Bread"/> Bread
+    <br>
+  </fieldset>
+
+    <input type="submit" value="Add to Cart"/>
+</form>
+
+</body>
+</html>
